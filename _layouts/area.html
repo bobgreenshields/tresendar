@@ -1,0 +1,109 @@
+---
+layout: default
+---
+
+<article class="post">
+
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.number | append: " " | append: page.title }}</h1>
+  {%- if page.leads_to -%}
+	<div>
+		<p>Leads to 
+		{%- for area_number in page.leads_to -%}
+			{%- assign area_no_str  = area_number | downcase -%}
+			{%- assign areas  = site.areas | where: "number", area_no_str -%}
+						{%- if areas.size > 0 -%}
+						{%- assign area = areas.first -%}
+								<a  href="{{ area.url | relative_url }}">
+									{{ area.number | append: " - " | append: area.title }}
+								</a>
+						{%- else -%}
+							<span class="warning">{{ area_number }} - cannot find area file</span>
+						{%- endif -%}
+		{%- endfor -%}
+		</p>
+	</div>
+  {%- endif -%}
+  </header>
+
+
+  <div class="post-content">
+
+		<div class="gridwrapper">
+
+
+	{%- assign area_maps  = site.static_files | where: "area_map", true | where: "basename", page.number -%}
+		{%- if area_maps.size > 0 -%}
+			<div>
+					<a href="{{ area_maps.first.path | relative_url }}">
+						<img src={{ area_maps.first.path | relative_url }} class="map-thumb" alt=""/>
+					</a>
+			</div>
+		{%- endif -%}
+<div>
+    {{ content }}
+	
+</div>
+
+		{%  include area_items.html %}
+<div>
+	
+		<h4>Adversaries</h4>
+		<div id="tabs">
+		<ul>
+			{%- for roster in site.rosters -%}
+			<!-- <li><a href="#{{ roster.title }}">{{ roster.description }}</a></li> -->
+			<li><a href="#{{ roster.title }}">{{ roster.title }}</a></li>
+			{%- endfor -%}
+		</ul>
+
+		{%- for roster in site.rosters -%}
+		<div id="{{ roster.title }}">
+			
+			<a href="{{ roster.url | relative_url }}" title="{{ roster.title }}">{{ roster.description }}</a>
+			{%- assign adversaries  = site.data[roster.data_file] | where: "area", page.number -%}
+			{%- if adversaries.size > 0 -%}
+				<table>
+					<tr>
+					<th>Group</th>
+					{%- for title in roster.data_titles -%}
+						<th>{{ title }}</th>
+					{%- endfor -%}
+					</tr>
+					{%-for adversary in adversaries -%}
+						{% assign adv_area = adversary.area | downcase %}
+						{%- if adv_area == page.number -%}
+						{%- assign mob_id = adversary.mob | downcase -%}
+						{%- assign mob = site.data.mobs[mob_id] -%}
+						{%- assign mob_name = mob_id | capitalize -%}
+						{%- assign mob_pages  = site.mobs | where: "mob", mob_id -%}
+						<tr>
+						<td>{{ mob_name }}</td>
+						{%- if mob_pages.size > 0 -%}
+								<td><a href="{{ mob_pages[0].url | relative_url }}" title="Loot: {{ mob.loot }}">{{mob.desc}}</a></td>
+						{%- else -%}
+						<td><span title="Loot: {{ mob.loot }}">{{ mob.desc }}</span></td>
+						{%- endif -%}
+						<td>{{ mob.pp }}</td>
+						<td>{{ adversary.notes }}</td>
+					{%- endif -%}
+					</tr>
+				{%- endfor -%}
+				</table>
+			{%- else -%}
+				<p>None</p>
+			{%- endif -%}
+		</div>
+		{%- endfor -%}
+		</div>
+
+</div>
+
+		</div>
+
+	{%- include player_images.html -%}
+
+  </div>
+
+</article>

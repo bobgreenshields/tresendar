@@ -1,0 +1,16 @@
+	{%- if page.player_images -%}
+		<div class="row">
+			{%- for image_name in page.player_images -%}
+				<div class="column">
+			
+					{%- assign player_images = site.static_files | where: "player_image", true | where: "basename", image_name -%}
+					{%- if player_images.size > 0 -%}
+							<a href="{{ player_images.first.path | relative_url }}"><img src="{{ player_images.first.path | relative_url }}" class="player-image-thumb" alt="{{ image_name }}" title="{{ image_name }}"></a>
+					{%- else -%}
+						<p class="warning">Missing {{ image_name }} image</p>
+					{%- endif -%}
+				</div>
+			{%- endfor -%}
+		</div>
+	{%- endif -%}
+
