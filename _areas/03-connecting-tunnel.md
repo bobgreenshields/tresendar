@@ -1,7 +1,7 @@
 ---
 layout: area
 title: "Connecting tunnel"
-number: 3
+number: "3"
 description: "Tunnel from entrance to bridge"
 leads_to:
   - 1

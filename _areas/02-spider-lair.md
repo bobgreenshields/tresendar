@@ -1,7 +1,7 @@
 ---
 layout: area
 title: "Spider lair"
-number: 2
+number: "2"
 description: "A giant spider guards her offspring"
 player_images:
   - giant-spider
