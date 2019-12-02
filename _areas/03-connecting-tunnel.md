@@ -1,12 +1,12 @@
 ---
 layout: area
 title: "Connecting tunnel"
-number: "3"
+number: 3
 description: "Tunnel from entrance to bridge"
 leads_to:
-  - "1"
-  - "2"
-  - "4"
+  - 1
+  - 2
+  - 4
 categories: area
 ---
 

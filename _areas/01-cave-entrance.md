@@ -1,11 +1,11 @@
 ---
 layout: area
 title: "Cave Entrance"
-number: "1"
+number: 1
 description: "Main entrance to the cave system"
 categories: area
 leads_to:
-  - "3"
+  - 3
 player_images:
   - goblin-warlord
 ---

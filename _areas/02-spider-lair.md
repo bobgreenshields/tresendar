@@ -1,14 +1,14 @@
 ---
 layout: area
 title: "Spider lair"
-number: "2"
+number: 2
 description: "A giant spider guards her offspring"
 player_images:
   - giant-spider
   - ghoul
 leads_to:
-  - "3"
-  - "13"
+  - 3
+  - 13
 categories: area
 ---
 The walls, floor and ceiling of this cave are covered in a mesh of webs.  Curtains of thick heavy webs drape the walls obscuring the exact shape of the cave
