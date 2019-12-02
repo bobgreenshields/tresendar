@@ -6,6 +6,8 @@ description: "Main entrance to the cave system"
 categories: area
 leads_to:
   - "3"
+player_images:
+  - goblin-warlord
 ---
 
 The cave mouth curves back into the darkness where an 8ft tall wooden pallisade has been constructed.  There is a gate at the east end secured by a sliding bar.

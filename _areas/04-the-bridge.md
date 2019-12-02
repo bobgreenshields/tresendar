@@ -6,12 +6,14 @@ description: "A bridge across the river"
 leads_to:
   - 3
   - 14
+player_images:
+  - bugbear
 categories: area
 ---
 
 The river flows shin deep but swiftly through a 15ft. deep chasm.  A makeshift bridge crosses it at the narrowest point.  The goblins have a barricade on the far side of the river that can be pulled across the end of the bridge.
 
-# Loot notes
+### Loot notes
 
 * Alarm horn
 * [Caltrops 2 bags](https://roll20.net/compendium/dnd5e/Caltrops#content)

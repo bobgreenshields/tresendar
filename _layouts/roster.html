@@ -1,0 +1,84 @@
+---
+layout: default
+---
+<article class="post">
+
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.number | append: " " | append: page.title }}</h1>
+  </header>
+
+
+  <div class="post-content">
+
+		{%- if page.description -%}
+			<p>{{ page.description }}</p>
+		{%- endif -%}
+		
+		{%- assign area_list = site.empty_array -%}
+<!-- create an array containing all of the area numbers as integers -->
+		{%- for area in site.areas -%}
+			{%- assign area_number = area.number | plus: 0 -%}
+			{%- assign area_list = area_list | push: area_number -%}
+		{%- endfor -%}
+
+	<table>
+		<tr>
+		<th>Area</th>
+		<th>Group</th>
+		<th><a href="{{ "mobs" | relative_url }}" title="Mobs">Adversaries</a></th>
+		<th>PP</th>
+		<th>Notes</th>
+		</tr>
+		<!-- create a sorted array of all the areas in the roster as integers -->
+		{%- assign sorted_areas = site.empty_array -%}
+		{%- for adversary in site.data[page.data_file] -%}
+			{% assign adv_area = adversary.area | plus: 0 %}
+			{%- assign sorted_areas = sorted_areas | push: adv_area -%}
+		{%- endfor -%}
+		{%- assign sorted_areas = sorted_areas | uniq | sort -%}
+
+<!-- iterate through the sorted array of areas in the roster -->
+<!-- making all area comparisons as integers -->
+		{%- for area_index in sorted_areas -%}
+
+		{%- for adversary in site.data[page.data_file] -%}
+		{% assign adv_area = adversary.area | plus: 0 %}
+		{%- if area_index == adv_area -%}
+			<tr>
+				{%- if area_list contains adv_area -%}
+					{%- for area in site.areas -%}
+						{%- assign area_number = area.number | plus: 0 -%}
+						{%- if area_number == adv_area -%}
+							<td><a href="{{ area.url | relative_url }}" title="{{ area.title }}">{{adversary.area}}</a></td>
+						{%- endif -%}
+					{%- endfor -%}
+				{%- else -%}
+					<td>{{ adv_area }}</td>
+				{%- endif -%}
+			<td>{{ adversary.mob }}</td>
+				{%- assign mob_id = adversary.mob | downcase -%}
+				{%- assign mob_name = adversary.mob | capitalize -%}
+				{%- assign mob = site.data.mobs[mob_id] -%}
+				{%- assign mob_pages  = site.mobs | where: "mob", mob_id -%}
+				{%- if mob_pages.size > 0 -%}
+						<td><a href="{{ mob_pages[0].url | relative_url }}" title="Loot: {{ mob.loot }}">{{mob.desc}}</a></td>
+				{%- else -%}
+				<td><span title="Loot: {{ mob.loot }}">{{ mob.desc }}</span></td>
+				{%- endif -%}
+					<td>{{ mob.pp }}</td>
+					<td>{{ adversary.notes }}</td>
+			</tr>
+
+		{%- endif -%}
+		{%- endfor -%}
+		{%- endfor -%}
+	</table>
+
+    {{ content }}
+
+		{%- include player_images.html -%}
+
+  </div>
+
+</article>
