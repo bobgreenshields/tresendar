@@ -14,11 +14,12 @@ layout: default
 
     <ul class="post-list">
       {%- for area in site.areas -%}
+			{%- assign area_no_str = area.number | downcase -%}
+
       <li>
         <h3>
           <a class="post-link" href="{{ area.url | relative_url }}">
-						<!--{{ area.number | escape }} - {{ area.title | escape }} -->
-						{{ area.number | append: " - " | append: area.title }}
+						{{ area_no_str | append: " - " | append: area.title }}
             
           </a>
         </h3>

@@ -5,7 +5,7 @@ layout: default
 
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.number | append: " " | append: page.title }}</h1>
+    <h1 class="post-title">{{ page.title }}</h1>
   </header>
 
 
@@ -44,13 +44,14 @@ layout: default
 
 		{%- for adversary in site.data[page.data_file] -%}
 		{% assign adv_area = adversary.area | plus: 0 %}
+		{% assign adv_area_str = adversary.area | downcase %}
 		{%- if area_index == adv_area -%}
 			<tr>
 				{%- if area_list contains adv_area -%}
 					{%- for area in site.areas -%}
 						{%- assign area_number = area.number | plus: 0 -%}
 						{%- if area_number == adv_area -%}
-							<td><a href="{{ area.url | relative_url }}" title="{{ area.title }}">{{adversary.area}}</a></td>
+							<td><a href="{{ area.url | relative_url }}" title="{{ area.title }}">{{adv_area_str}}</a></td>
 						{%- endif -%}
 					{%- endfor -%}
 				{%- else -%}
