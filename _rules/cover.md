@@ -2,7 +2,7 @@
 layout: rule
 title: Cover
 summary: "Half cover +2 to AC and Dex saves. 3/4 +5 to AC and Dex saves."
-title_link: "https://www.dandwiki.com/wiki/5e_SRD:Cover" 
+title-link: "https://www.dandwiki.com/wiki/5e_SRD:Cover" 
 ---
 Walls, trees, creatures, and other obstacles can provide cover during combat, making a target more difficult to harm. A target can benefit from cover only when an attack or other effect originates on the opposite side of the cover.
 
