@@ -1,9 +1,9 @@
-title: Deliverance from the depths
+title: Tresendar Manor
 author: GitHub User
 email: your-email@domain.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  A desperate delve into a cave system to rescue captives
-  from a brutal goblin war band
+  The Redbrands' base in Phandalin, a dungeon complex under the ruined 
+  Tresendar Manor.
 
 show_excerpts: false # set to true to show excerpts on the homepage
 exclude: [.backups]
