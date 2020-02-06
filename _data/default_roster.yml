@@ -2,3 +2,7 @@
   area: 2
   notes: "Resting"
 
+- mob: b
+  area: 4
+  notes: "will attack anyone w/in 10 ft of doors to 5 or 6"
+
