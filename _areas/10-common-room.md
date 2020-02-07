@@ -1,15 +1,14 @@
 ---
 layout: area
-title: "Cellar"
-number: 1
-description: "Large storage cellar"
+title: "Common room"
+number: 10
+description: "HQ and meeting room"
 categories: area
 player_images:
-  - main
 leads_to:
-  - 2
-  - 3
   - 8
+  - 9
+  - 11
 ---
 
 

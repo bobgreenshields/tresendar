@@ -1,15 +1,13 @@
 ---
 layout: area
-title: "Cellar"
-number: 1
-description: "Large storage cellar"
+title: "Armoury"
+number: 6
+description: "Weapon store"
 categories: area
 player_images:
-  - main
 leads_to:
-  - 2
-  - 3
-  - 8
+  - 4
+  - 7
 ---
 
 

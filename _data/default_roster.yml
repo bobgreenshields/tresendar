@@ -6,3 +6,31 @@
   area: 4
   notes: "will attack anyone w/in 10 ft of doors to 5 or 6"
 
+- mob: c
+  area: 9
+  notes: "tormenting Droop"
+
+- mob: d
+  area: 10
+  notes: "drinking and playong knucklebones"
+
+- mob: droop
+  area: 9
+  notes: "being tormented by the bugbears"
+
+- mob: glasstaff
+  area: 12
+  notes: "studying a tome at his desk"
+
+- mob: mosk
+  area: 9
+  notes: "tormenting Droop"
+
+- mob: nothic
+  area: 8
+  notes: "Hiding on the west side behind a rock column"
+
+- mob: rat
+  area: 11
+  notes: "telepathically linked to Glasstaff"
+

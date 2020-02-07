@@ -1,15 +1,16 @@
 ---
 layout: area
-title: "Cellar"
-number: 1
-description: "Large storage cellar"
+title: "Crevasse"
+number: 8
+description: "A collapsed cavern"
 categories: area
 player_images:
-  - main
 leads_to:
-  - 2
-  - 3
-  - 8
+  - 1
+  - 7
+  - 9
+  - 10
+  - 11
 ---
 
 

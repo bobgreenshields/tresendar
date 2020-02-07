@@ -1,15 +1,14 @@
 ---
 layout: area
-title: "Cellar"
-number: 1
-description: "Large storage cellar"
+title: "Wizard's workshop"
+number: 11
+description: "Glasstaff's potion workshop"
 categories: area
 player_images:
-  - main
 leads_to:
-  - 2
-  - 3
   - 8
+  - 10
+  - 12
 ---
 
 

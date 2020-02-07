@@ -8,3 +8,38 @@ b:
   loot: "none"
   desc: "3 skeletons"
 
+c:
+  pp: "10"
+  loot: "none"
+  desc: "2 bugbears"
+
+d:
+  pp: "9"
+  loot: ""
+  desc: "4 Redbrands"
+
+droop:
+  pp: "9"
+  loot: "none"
+  desc: "a goblin"
+
+glasstaff:
+  pp: "11"
+  loot: "staff of defense, scroll charm person, scroll fireball"
+  desc: "Glasstaff, Redbrand leader and evil wizard"
+
+mosk:
+  pp: "10"
+  loot: "33sp, eyepatch (50gp), iron key to all doors"
+  desc: "Mosk the bugbear leader"
+
+nothic:
+  pp: "12"
+  loot: "none"
+  desc: "A Nothic"
+
+rat:
+  pp: "11"
+  loot: "none"
+  desc: "Glasstaff's rat familiar"
+

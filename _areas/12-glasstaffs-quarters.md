@@ -1,15 +1,13 @@
 ---
 layout: area
-title: "Cellar"
-number: 1
-description: "Large storage cellar"
+title: "Glasstaff's quarters"
+number: 12
+description: "A living space"
 categories: area
 player_images:
-  - main
 leads_to:
-  - 2
-  - 3
-  - 8
+  - 7
+  - 11
 ---
 
 

@@ -1,15 +1,13 @@
 ---
 layout: area
-title: "Cellar"
-number: 1
-description: "Large storage cellar"
+title: "Guard barracks"
+number: 9
+description: "Barracks"
 categories: area
 player_images:
-  - main
 leads_to:
-  - 2
-  - 3
   - 8
+  - 10
 ---
 
 

@@ -1,15 +1,14 @@
 ---
 layout: area
-title: "Cellar"
-number: 1
-description: "Large storage cellar"
+title: "Storeroom and Work Area"
+number: 7
+description: "Storage for stolen wares"
 categories: area
 player_images:
-  - main
 leads_to:
-  - 2
-  - 3
+  - 6
   - 8
+  - 12
 ---
 
 
