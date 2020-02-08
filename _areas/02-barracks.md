@@ -9,8 +9,8 @@ leads_to:
   - 1
 ---
 
+A place to lie low from trouble in Phandalin.
 
-[**Wis (Perception) check**]({{ site.baseurl }}{% link party.md %})
-* DC 18 something hidden
-* DC 10 something obvious
+If the Redbrands hear noise in 1 they prepare to for a fight and try to surprise intruders.
 
+Three dirty scarlet cloaks hang from the bunks.

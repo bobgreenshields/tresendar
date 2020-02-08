@@ -1,6 +1,19 @@
 - title: "Cistern"
   desc: |-
-    A rectangular reserviour of water
+    * clean and filled with cold fresh water
+    * drain pipes from the roof above fill it with water
+    * 10 ft deep, rim 2ft above floor
+
+    Wis (Perc) DC 15 waterproof satchel hung from a submerged rope on south side or automatic if probed or jumped in.  It contains
+    * Potion of healing
+    * Potion of invisibilty
+    * 50gp
+    * clean travel clothing
+
+- title: "Barrels and crates"
+  desc: |-
+    Contain salted pork and beef, flour, sugar, apples and ale.  Moving them around to search them thoroughly is a noisy activity.
+
 
 - title: "Secret door"
   desc: |-

@@ -11,9 +11,14 @@ leads_to:
   - 3
   - 8
 ---
+* Door opens onto a landing 15 ft above a large cellar
+* Door beneath stairs to north
+* Large stone cistern
+* Walls lined with barrels and crates
 
+Noise in the cellar will attract the attention of Redbrands in 2 who will prepare to surprise intruders.
 
-[**Wis (Perception) check**]({{ site.baseurl }}{% link party.md %})
-* DC 18 something hidden
-* DC 10 something obvious
+Secret door [**Wis (Perception) check**]({{ site.baseurl }}{% link party.md %})
+* DC 15 passive within 10 ft
+* DC 10 searching
 

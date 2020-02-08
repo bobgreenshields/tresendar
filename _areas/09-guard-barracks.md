@@ -5,6 +5,7 @@ number: 9
 description: "Barracks"
 categories: area
 player_images:
+  - bugbear
 leads_to:
   - 8
   - 10

@@ -5,6 +5,7 @@ number: 8
 description: "A collapsed cavern"
 categories: area
 player_images:
+  - nothic
 leads_to:
   - 1
   - 7

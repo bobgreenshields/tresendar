@@ -1,12 +1,12 @@
 a:
   pp: "9"
   loot: "12gp 28sp 15ep two gems (garnets) 20gp"
-  desc: "3 Redbrands"
+  desc: "3 Redbrands (300XP)"
 
 b:
   pp: "10"
   loot: "none"
-  desc: "3 skeletons"
+  desc: "3 skeletons (150XP)"
 
 c:
   pp: "10"
