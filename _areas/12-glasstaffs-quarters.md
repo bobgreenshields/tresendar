@@ -9,13 +9,14 @@ leads_to:
   - 7
   - 11
 ---
+If approached through the secret door from 7 they can surprise GS.  Otherwise he will have been forewarned by his rat familiar.
 
+* walls are covered in drapes of scarlet cloth
+* small writing desk, matching chair, confy bed
+* wooden chest at the foot
+
+if surprised - sitting at the desk is a short dark bearded human male in robes, studying a tome.  He wears a princely mantle of ermine.  A  beautiful glass staff leans against his chair in easy reach.
 
 Secret door [**Wis (Perception) check**]({{ site.baseurl }}{% link party.md %})
 * DC 15 passive within 10 ft
 * DC 10 searching
-
-[**Wis (Perception) check**]({{ site.baseurl }}{% link party.md %})
-* DC 18 something hidden
-* DC 10 something obvious
-
