@@ -10,9 +10,15 @@ leads_to:
   - 9
   - 11
 ---
+[Listen at door **Wis (Perception) check**]({{ site.baseurl }}{% link party.md %})
+* DC 10 arguing, groans and laughing, mysterious rattling sound
 
+* RBs drinking and playing knucklebones
+* 4 tough looking RBs wearing scarlet cloaks
+* A stack of coins and trinkets on the table
+* Will recognise imposters
 
-[**Wis (Perception) check**]({{ site.baseurl }}{% link party.md %})
-* DC 18 something hidden
-* DC 10 something obvious
+### Loot on table
+75cp, 55sp, 22ep, 15gp, gold and ruby earring 30gp
 
+400xp
