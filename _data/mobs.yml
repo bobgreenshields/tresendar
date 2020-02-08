@@ -41,7 +41,7 @@ mosk:
 nothic:
   pp: "12"
   loot: "none"
-  desc: "A Nothic 450xp"
+  desc: "A Nothic"
 
 rat:
   pp: "11"
