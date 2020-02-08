@@ -23,6 +23,11 @@ droop:
   loot: "none"
   desc: "a goblin"
 
+e:
+  pp: "9"
+  loot: "none"
+  desc: "2 Redbrands 100xp"
+
 glasstaff:
   pp: "11"
   loot: "staff of defense, scroll charm person, scroll fireball"

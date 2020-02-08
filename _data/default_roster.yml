@@ -18,6 +18,10 @@
   area: 9
   notes: "being tormented by the bugbears"
 
+- mob: e
+  area: 5
+  notes: "alerted by noise in crypts"
+
 - mob: glasstaff
   area: 12
   notes: "studying a tome at his desk"
