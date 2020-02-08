@@ -10,13 +10,16 @@ leads_to:
   - 8
   - 12
 ---
+The north end of a natural cavern, finished with dressed stone walls and a flagstone floor.
+* Barrels
+* Empty crates
+* straw for packing
+* hammers, pry bars and nails
 
+Here the RBs take stock of their loot and repackage it for sale or storage.
+
+**Loot** most items are not of value apart from 30 beaver pelts 2gp each.
 
 Secret door [**Wis (Perception) check**]({{ site.baseurl }}{% link party.md %})
 * DC 15 passive within 10 ft
 * DC 10 searching
-
-[**Wis (Perception) check**]({{ site.baseurl }}{% link party.md %})
-* DC 18 something hidden
-* DC 10 something obvious
-
