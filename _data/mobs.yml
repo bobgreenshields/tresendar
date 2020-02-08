@@ -31,7 +31,7 @@ e:
 glasstaff:
   pp: "11"
   loot: "staff of defense, scroll charm person, scroll fireball"
-  desc: "Glasstaff, Redbrand leader and evil wizard"
+  desc: "Glasstaff (Iarno Albreck), evil wizard"
 
 mosk:
   pp: "10"
@@ -41,7 +41,7 @@ mosk:
 nothic:
   pp: "12"
   loot: "none"
-  desc: "A Nothic and"
+  desc: "A Nothic"
 
 rat:
   pp: "11"
