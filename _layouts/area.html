@@ -43,14 +43,24 @@ layout: default
 		<div class="gridwrapper">
 
 
-	{%- assign area_maps  = site.static_files | where: "area_map", true | where: "basename", page_no_str -%}
-		{%- if area_maps.size > 0 -%}
+	{%- assign area_maps  = site.static_files | where: "area_map", true -%}
+	{%- assign maps_to_show = site.empty_array -%}
+
+			{%- for map in area_maps -%}
+				{%- assign map_no = map.basename | plus: 0 -%}
+				{%- if map_no == page_no -%}
+					{%- assign maps_to_show = maps_to_show | push: map -%}
+				{%- endif -%}
+			{%- endfor -%}
+
+		{%- if maps_to_show.size > 0 -%}
 			<div>
-					<a href="{{ area_maps.first.path | relative_url }}">
-						<img src={{ area_maps.first.path | relative_url }} class="map-thumb" alt=""/>
+					<a href="{{ maps_to_show.first.path | relative_url }}">
+						<img src={{ maps_to_show.first.path | relative_url }} class="map-thumb" alt=""/>
 					</a>
 			</div>
 		{%- endif -%}
+
 <div>
     {{ content }}
 	
